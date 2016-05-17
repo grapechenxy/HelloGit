@@ -1,0 +1,10 @@
+public class HelloWorld{
+
+public void HelloWorld(String a){
+if a.equal("Hello")
+System.out.println("Nice to meet you!");
+else 
+System.out.println("GoodBye!");
+}
+
+}
