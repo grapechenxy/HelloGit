@@ -1,5 +1,5 @@
 /** Required functionality
-     * 
+     *
      * 1) Adding todo items
      * 2) List the todo items
      * 3) Marking a todo item as done
@@ -9,7 +9,7 @@
      * 7) Edit todo items
      * 8) Mark todo items as not done
      * 9) XML file loading and saving (bonus)
-     * 
+     * test new feature1
      **/
 package todolist;
 
@@ -22,70 +22,70 @@ import static todolist.InputInt.inputInt;
 
 
 public class TodoList {
-     
+
     static ArrayList<MyItem> list  = new ArrayList<>();
-   
+
     public static void SwitchTest(){
         int choice;
         int i;
-        
+
         System.out.println("Choose: ");
-        
+
         choice = inputInt();
-         
-     
-        
+
+
+
         switch (choice) {
-            case 1:                
+            case 1:
                 addToArray();
                      break;
-            case 2:                 
+            case 2:
                 toList();
                      break;
-            case 3:  
+            case 3:
                 toMark();
                      break;
-            case 4:  
+            case 4:
                 toRemove();
                      break;
-            case 5:  
+            case 5:
                 toRemoveAllDone();
                      break;
-            case 6: 
+            case 6:
                 toSearch();
                      break;
-            case 7: 
-                toEdit();                
+            case 7:
+                toEdit();
                      break;
             case 8:
                 toMarkUndo();
                      break;
-            case 9:  
+            case 9:
                      break;
-            default: 
+            default:
                 System.out.println("Sorry wrong choice");
                      break;
         }
-        
-        
-        
-    
-        
+
+
+
+
+
     }
-        
-    
+
+
     public static void main(String[] args) {
-              
-      while(true){ 
-         
-        printMenu();    
-        
+
+      while(true){
+
+        printMenu();
+
         SwitchTest();
-        
+
        }
-    
-   
-       
+
+
+
     }
 
     private static void printMenu() {
@@ -98,13 +98,11 @@ public class TodoList {
              System.out.println("7 - edit");
              System.out.println("8 - mark as undo");
              System.out.println("9 - XML");
-        
-        
-    }
-        
-        
-        
-    
-}
-    
 
+
+    }
+
+
+
+
+}
